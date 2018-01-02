@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="author" content="Ajaz Miah">
+</head>
+<body>
+	<div id="wrapper">
+		<form name="calc">
+			<div id="display">
+				<input type="text" name="input" id="input" readonly="true">
+			</div>
+			<hr>
+
+			<div id="pad">
+				<input type="button" value="&radic;" onclick="calc.input.value =Math.sqrt(calc.input.value)">
+				<input type="button" value="CE" onclick="calc.input.value = ''">
+				<input type="button" value="C"  onclick="calc.input.value = ''">
+				<input type="button" value="&larr;" onclick="calc.input.value = calc.input.value.slice(0, -1)"><br>
+				
+				<input type="button" value="7" onclick="calc.input.value += '7'">
+				<input type="button" value="8" onclick="calc.input.value += '8'">
+				<input type="button" value="9" onclick="calc.input.value += '9'">
+				<input type="button" value="+" onclick="calc.input.value += '+'">
+				<br>
+				<input type="button" value="4" onclick="calc.input.value += '4'">
+				<input type="button" value="5" onclick="calc.input.value += '5'">
+				<input type="button" value="6" onclick="calc.input.value += '6'">
+				<input type="button" value="-" onclick="calc.input.value += '-'">	
+				<br>
+				<input type="button" value="1" onclick="calc.input.value += '1'">
+				<input type="button" value="2" onclick="calc.input.value += '2'">
+				<input type="button" value="3" onclick="calc.input.value += '3'">
+				<input type="button" value="*" onclick="calc.input.value += '*'">
+				
+				<input type="button" value="0" onclick="calc.input.value += '0'">
+				<input type="button" value="." onclick="calc.input.value += '.'">
+				<input type="button" value="=" onclick="calc.input.value = eval(calc.input.value)">
+				<input type="button" value="/" onclick="calc.input.value += '/'" id="equal">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
